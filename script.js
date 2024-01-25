@@ -1,6 +1,7 @@
 console.log("running");
 
 const cdata = {
+  companyname: "",
   cname: "",
   cemail: "",
   cpassword: "",
@@ -10,6 +11,7 @@ const cdata = {
 
 document.getElementById("form").addEventListener("submit", function (event) {
   const formData = new FormData(event.target);
+  cdata.companyname = formData.get("companyname");
   cdata.cname = formData.get("cname");
   cdata.cemail = formData.get("cemail");
   cdata.cpassword = formData.get("cpassword");

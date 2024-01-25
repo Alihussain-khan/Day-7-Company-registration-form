@@ -11,7 +11,6 @@ document.getElementById("form").addEventListener("submit", function (event) {
   const formData = new FormData(event.target);
   cdata.cname = formData.get("cname");
   cdata.cemail = formData.get("cemail");
-  cdata.cpassword = formData.get("cpassword");
   cdata.department = formData.get("departments");
 
   console.log(cdata);
