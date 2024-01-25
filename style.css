@@ -1,0 +1,60 @@
+body {
+  background-color: rgb(171, 171, 253);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main {
+  display: flex;
+  margin-top: 100px;
+  justify-content: center;
+}
+.form {
+  padding: 30px 50px;
+  background-color: white;
+  border-radius: 15px;
+}
+.form-heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+}
+.text-input {
+  /* width: 100%; */
+  width: 200px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+.checkbox {
+  margin-bottom: 10px;
+}
+
+.btn {
+  background: rgb(171, 171, 253);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 10px;
+  border-color: rgb(171, 171, 253);
+  box-shadow: none;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: rgb(160, 160, 238);
+}
+
+table {
+  border: 1px solid;
+  width: 600px;
+}
+th {
+  background: rgb(115, 115, 172);
+  padding: 5px;
+}
+
+tr {
+  padding: 5px;
+}
+
+td {
+  background: rgb(159, 159, 223);
+}

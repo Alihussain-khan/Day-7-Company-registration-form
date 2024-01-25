@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+        <h2 class="form-heading">Sign up</h2>
+        <form id="form">
+          <input
+            name="cname"
+            class="text-input"
+            type="text"
+            placeholder="Name"
+            required
+          /><br />
+          <input
+            name="cemail"
+            class="text-input"
+            type="email"
+            placeholder="Email"
+            required
+          /><br />
+          <input
+            name="cpassword"
+            class="text-input"
+            type="password"
+            placeholder="Password"
+            required
+          /><br />
+          <!-- <input
+            class="text-input"
+            type="text"
+            placeholder="Departments"
+          /><br /> -->
+          <!-- <label for="cars">Choose departments:</label>
+          <select name="departments" id="departments" multiple>
+            <option value="volvo">Department 1</option>
+            <option value="saab">Department 2</option>
+            <option value="opel">Department 3</option>
+            <option value="audi">Department 4</option>
+          </select> -->
+          <span style="text-align: center"
+            >You can select multiple departments</span
+          ><br />
+          <label class="d-labeles"> Department 1: </label>
+          <input class="checkbox" name="d-1" type="checkbox" /> <br />
+          <label class="lebels"> Department </label>
+          <input class="checkbox" name="d-2" type="checkbox" /> <br />
+          <label class="lebels"> Department 3: </label>
+          <input class="checkbox" name="d-3" type="checkbox" /> <br />
+          <label class="lebels"> Department 4: </label>
+          <input class="checkbox" name="d-4" type="checkbox" /> <br />
+          <textarea
+            name="cdescription"
+            class=""
+            type="text"
+            placeholder="Company Description"
+            style="width: 200px"
+          ></textarea>
+          <br />
+          <button class="btn" type="submit">Sign up</button>
+        </form>
+
+        <p>
+          already registered?
+          <a
+            style="text-decoration: none cornflowerblue"
+            class="login-a"
+            href="index.html"
+            >Login</a
+          >
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

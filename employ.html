@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Emmployee</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="form">
+        <h2 class="form-heading">Add Employee</h2>
+        <form id="form">
+          <input
+            name="cname"
+            class="text-input"
+            type="text"
+            placeholder="Name"
+            required
+          /><br />
+          <input
+            name="cemail"
+            class="text-input"
+            type="email"
+            placeholder="Email"
+            required
+          /><br />
+
+          <label for="department">Department:</label>
+
+          <select
+            name="departments"
+            id="departments"
+            style="margin-bottom: 10px"
+          >
+            <option value="d-1">D-1</option>
+            <option value="d-2">D-2</option>
+            <option value="d-3">D-3</option>
+            <option value="d-4">D-4</option></select
+          ><br />
+          <button class="btn" type="submit">Sign up</button>
+        </form>
+      </div>
+    </div>
+    <div style="display: flex; justify-content: center">
+      <div style="color: white; margin-top: 50px">
+        <table id="">
+          <tr>
+            <th>name</th>
+            <th>email</th>
+            <th>department</th>
+          </tr>
+          <tr id="table" style="text-align: center"></tr>
+        </table>
+      </div>
+    </div>
+
+    <script src="employe.js"></script>
+  </body>
+</html>
