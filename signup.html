@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,14 +10,23 @@
     <div class="main">
       <div class="form">
         <h2 class="form-heading">Sign up</h2>
-        <form id="form">
+        <form id="form" onsubmit="call()">
           <input
             name="companyname"
             class="text-input"
             type="text"
             placeholder="Company name"
             required
+            autofocus
           /><br />
+          <input
+            name="cdescription"
+            class="text-input"
+            type="text"
+            placeholder="Company Description"
+            style="width: 200px"
+          ></input>
+          <br />
           <input
             name="cname"
             class="text-input"
@@ -38,38 +47,9 @@
             type="password"
             placeholder="Password"
             required
+            maxlength="8"
           /><br />
-          <!-- <input
-            class="text-input"
-            type="text"
-            placeholder="Departments"
-          /><br /> -->
-          <!-- <label for="cars">Choose departments:</label>
-          <select name="departments" id="departments" multiple>
-            <option value="volvo">Department 1</option>
-            <option value="saab">Department 2</option>
-            <option value="opel">Department 3</option>
-            <option value="audi">Department 4</option>
-          </select> -->
-          <span style="text-align: center"
-            >You can select multiple departments</span
-          ><br />
-          <label class="d-labeles"> Department 1: </label>
-          <input class="checkbox" name="d-1" type="checkbox" /> <br />
-          <label class="lebels"> Department </label>
-          <input class="checkbox" name="d-2" type="checkbox" /> <br />
-          <label class="lebels"> Department 3: </label>
-          <input class="checkbox" name="d-3" type="checkbox" /> <br />
-          <label class="lebels"> Department 4: </label>
-          <input class="checkbox" name="d-4" type="checkbox" /> <br />
-          <textarea
-            name="cdescription"
-            class=""
-            type="text"
-            placeholder="Company Description"
-            style="width: 200px"
-          ></textarea>
-          <br />
+
           <button class="btn" type="submit">Sign up</button>
         </form>
 
