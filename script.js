@@ -1,11 +1,11 @@
 console.log("running");
 var obj;
 const cdata = {
-  company_name: "",
-  employee_name: "",
+  companyName: "",
+  employeeName: "",
   email: "",
   password: "",
-  company_description: "",
+  companyDescription: "",
 };
 
 const call = () => {
@@ -80,13 +80,13 @@ document.getElementById("form").addEventListener("submit", function (event) {
   })
     .then((response) => response.json())
     .then((data) => {
-      let message = data.message;
-      if (message.endsWith("registered!")) {
-        console.log("next page");
-        window.location.href = "index.html";
-      } else {
-        alert(message);
-      }
+      // let message = data.message;
+      // if (message.endsWith("registered!")) {
+      //   console.log("next page");
+      //   window.location.href = "index.html";
+      // } else {
+      //   alert(message);
+      // }
       console.log(data);
     })
     .catch((error) => {

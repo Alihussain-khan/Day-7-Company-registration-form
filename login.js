@@ -21,7 +21,9 @@ document.getElementById("form").addEventListener("submit", function (event) {
     },
     body: JSON.stringify(cdata),
   })
-    .then((response) => response.json())
+    .then((response) => {
+      return response.json();
+    })
     .then((data) => {
       let message = data.message;
       if (message.endsWith("in!")) {
@@ -30,7 +32,7 @@ document.getElementById("form").addEventListener("submit", function (event) {
       } else {
         alert("wrong password or email");
       }
-      console.log(data.message);
+      console.log(data);
     })
     .catch((error) => {
       console.error("Error during login:", error);

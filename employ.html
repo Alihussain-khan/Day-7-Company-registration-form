@@ -25,6 +25,22 @@
             placeholder="Email"
             required
           /><br />
+          <input
+            name="cpassword"
+            class="text-input"
+            type="password"
+            placeholder="Password"
+            required
+            maxlength="8"
+          /></br>
+          <input
+            name="companyname"
+            class="text-input"
+            type="text"
+            placeholder="Company name"
+            required
+            autofocus
+          /><br />
 
           <label for="department">Department:</label>
 
@@ -33,26 +49,27 @@
             id="departments"
             style="margin-bottom: 10px"
           >
-            <option selected value="d-1">D-1</option>
-            <option value="d-2">D-2</option>
-            <option value="d-3">D-3</option>
-            <option value="d-4">D-4</option></select
+            <option selected value="Admin">Admin</option>
+            <option value="Marketing">Marketing</option>
+            <option value="Sales">Sales</option>
+            <option value="Production">Production</option>
+            <option value="Legal">Legal</option></select
           ><br />
-          <button class="btn" type="submit">Add</button>
+          <button class="btn" type="submit">Login</button>
         </form>
         <p>
-          finished adding?
+          already registered?
           <a
             style="text-decoration: none cornflowerblue"
             class="login-a"
-            href="index.html"
+            href="employeeLogin.html"
           >
-            log out</a
+            Login</a
           >
         </p>
       </div>
     </div>
-    <div style="display: flex; justify-content: center">
+    <!-- <div style="display: flex; justify-content: center">
       <div style="color: white; margin-top: 50px">
         <table id="">
           <tr>
@@ -63,7 +80,7 @@
           <tr id="table" style="text-align: center"></tr>
         </table>
       </div>
-    </div>
+    </div> -->
 
     <script src="employe.js"></script>
   </body>
